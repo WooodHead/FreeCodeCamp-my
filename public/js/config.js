@@ -9,7 +9,6 @@ function($routeProvider) {
   })
   .when('/articles/create',{
     templateUrl:'views/articles/create.html'
-  })
-  
+  })  
   .otherwise('/');
 }]);

@@ -5,10 +5,11 @@ html(ng-app='mean')
     script(src='/lib/js/angular-route.js')
     script(src='/js/app.js')
     script(src='/js/config.js')
+    script(src='/js/controllers/articles.js')
     
   body
     p Welcome
-    hr
     p test angular expression expect: 3 -> {{1+2}}
     p {{test}}
+    hr
     section(data-ng-view)

@@ -12,5 +12,7 @@ module.exports = function (app) {
 
 	var articles = require('../app/controllers/articles');
 	app.get('/articles', articles.all);
-
+  app.get('/articles/:articleId', articles.show);
+  
+  app.param('articleId', articles.article);
 };

@@ -1,3 +1,13 @@
 <p>
 articles/list.html
 </p>
+
+<section data-ng-controller="ArticleController", data-ng-init="find()">
+<p>{{test}}</p>
+<ul>
+<li data-ng-repeat="article in articles">
+<h2>{{article.title}}</h2>
+<div>{{article.content}}</div>
+</li>
+</ul>
+</section>
