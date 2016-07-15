@@ -1,0 +1,14 @@
+doctype html
+html(ng-app='mean')
+  head
+    script(src='/lib/js/angular.js')
+    script(src='/lib/js/angular-route.js')
+    script(src='/js/app.js')
+    script(src='/js/config.js')
+    
+  body
+    p Welcome
+    hr
+    p test angular expression expect: 3 -> {{1+2}}
+    p {{test}}
+    section(data-ng-view)

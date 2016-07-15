@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form.form-horizontal
+    .control-group
+      label.control-label(for='name') Full name
+      .controls
+        input(type='text', placeholder='Full name')
+      
+    .control-group
+      label.control-label() Email
+      input(type='text', placeholder='Email')
+    
+    .control-group
+      label.control-label Username
+      input(type='text', placeholder='Username')
+        
+    .control-group
+      label.control-label Password
+      input(type='text', placeholder='Password')
+    
+    .form-actions
+      button.btn.btn-primary Sign up
